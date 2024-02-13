@@ -1,0 +1,173 @@
+body {
+  background-color: rgb(211, 2, 89);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  padding-top: 8%;
+  
+}
+.border {
+  border: 2px solid red;
+  border-radius: 15px 0px;
+  margin-top: 10%;
+  margin: 10px;
+  padding: 5% 12%;
+  box-shadow: 3px 2px 2px black;
+  background-image: url("https://images.unsplash.com/photo-1562690868-60bbe7293e94?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D ");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* for the word HAPPY on the page */
+#bounce {
+  display: flex;
+  font-size: 30px;
+  padding-left: 20%;
+}
+
+/* Animation for the letter h*/
+#h {
+  color: yellow;
+  animation: first 2s linear;
+
+  text-shadow: 2px 2px black;
+}
+
+@keyframes first {
+  0% {
+    transform: translateX(0px);
+    
+  }
+  50% {
+    transform: translateX(-20px);
+    filter: blur(5px);
+  }
+  100% {
+    transform: translateX(0px);
+
+  }
+}
+
+/* Animation for the letter a */
+
+#a {
+  color: red;
+  animation: second 4.3s linear infinite;
+}
+
+@keyframes second {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* animation for the first p */
+
+#p {
+  animation: third 3.8s linear infinite;
+}
+
+@keyframes third {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-27px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* animation for the second p */
+
+#p1 {
+  color: rgb(2, 255, 2);
+  animation: forth 4.5s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes forth {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: rotate(140deg);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* animation for the letter y */
+
+#y {
+  color: rgb(80, 13, 13);
+  text-shadow: 2px 2px white;
+  animation: fifth 3.9s linear infinite;
+}
+
+@keyframes fifth {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-19px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ==================================================================
+         styling the word valentine
+===================================================================== */
+
+.one {
+  font-size: 30px;
+  font-family: 	Copperplate, sans-serif;
+  color: white;
+  animation: val 4s linear;
+  text-shadow: 3px 2px 2px gray;
+}
+
+@keyframes val {
+  0% {
+    transform: scale(1);
+    color: transparent;
+  }
+  50% {
+    transform: scale(2);
+    color: black;
+    text-shadow: 2px 2px 3px red;
+  }
+  100% {
+    transform: scale(2);
+    color: transparent;
+  }
+}
+/* for smaller screen  */
+
+@media screen and (min-width: 200px) {
+  .main {
+    margin-top: 17%;
+  }
+}
+.heart {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  font-size: 30px;
+  filter: blur(1.2px);
+}
